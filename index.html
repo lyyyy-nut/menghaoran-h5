@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="referrer" content="no-referrer">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>鹿门深处·走近孟浩然</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            overflow: hidden;
+            background: #f9f5eb;
+            font-family: "Microsoft YaHei", serif;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        .page {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+            color: #2b1c0d;
+            text-align: center;
+            transition: transform 0.7s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+
+        /* 大标题：置顶、放大、强制单行不换行 */
+        .title {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 40px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            white-space: nowrap;  /* 只占一行，强制不换行 */
+            /* 白色描边 */
+            text-shadow: 
+                -1px -1px 0 #fff,
+                1px -1px 0 #fff,
+                -1px 1px 0 #fff,
+                1px 1px 0 #fff;
+        }
+
+        .subtitle {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 24px;
+            /* 白色描边 */
+            text-shadow: 
+                -1px -1px 0 #fff,
+                1px -1px 0 #fff,
+                -1px 1px 0 #fff,
+                1px 1px 0 #fff;
+        }
+
+        /* 正文：加大、加粗、白色描边 */
+        .content {
+            font-size: 19px;
+            font-weight: bold;
+            line-height: 2;
+            max-width: 90%;
+            margin-bottom: 20px;
+            /* 白色描边 */
+            text-shadow: 
+                -1px -1px 0 #fff,
+                1px -1px 0 #fff,
+                -1px 1px 0 #fff,
+                1px 1px 0 #fff;
+        }
+
+        /* 诗句：加大、加粗、白色描边 */
+        .poem {
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 2.2;
+            margin: 26px 0;
+            /* 白色描边 */
+            text-shadow: 
+                -1px -1px 0 #fff,
+                1px -1px 0 #fff,
+                -1px 1px 0 #fff,
+                1px 1px 0 #fff;
+        }
+
+        .tip {
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 40px;
+            color: #222;
+            /* 白色描边 */
+            text-shadow: 
+                -1px -1px 0 #fff,
+                1px -1px 0 #fff,
+                -1px 1px 0 #fff,
+                1px 1px 0 #fff;
+            animation: tipArrow 1.6s infinite;
+        }
+        @keyframes tipArrow {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+<!-- 第1页 -->
+<div class="page" style="background-image: url('https://s41.ax1x.com/2026/05/06/pebDoTK.png');">
+    <div class="title">鹿门深处</div>
+    <div class="subtitle">走近孟浩然</div>
+    <div class="tip">↑ 向上滑动，走进孟浩然的一生 ↑</div>
+</div>
+
+<!-- 第2页 -->
+<div class="page" style="background-image: url('https://s41.ax1x.com/2026/05/07/peb4hX8.png');">
+    <div class="title">少年求学·鹿门山隐居</div>
+    <div class="content">689 - 约717</div>
+    <div class="content">孟浩然出生于襄阳书香家庭，青年与弟弟在鹿门山隐居读书。</div>
+    <div class="poem">俱怀鸿鹄志，昔有鶺鴒心。</div>
+    <div class="content">——《洗然弟竹亭》</div>
+    <div class="tip">↑ 继续滑动 ↑</div>
+</div>
+
+<!-- 第3页 -->
+<div class="page" style="background-image: url('https://s41.ax1x.com/2026/05/07/peb4I0g.png');">
+    <div class="title">漫游干谒·求仕之路</div>
+    <div class="content">约717 - 730</div>
+    <div class="content">四十岁出山游历，赴长安应举未中。献诗张九龄，以干谒言志。</div>
+    <div class="poem">欲济无舟楫，端居耻圣明。</div>
+    <div class="content">——《望洞庭湖赠张丞相》</div>
+    <div class="tip">↑ 继续滑动 ↑</div>
+</div>
+
+<!-- 第4页 -->
+<div class="page" style="background-image: url('https://s41.ax1x.com/2026/05/07/peb47kj.png');">
+    <div class="title">吴越漫游·寄情山水</div>
+    <div class="content">约730 - 735</div>
+    <div class="content">长安失意后漫游吴越，山水为伴，孤寂又自在，诗风清雅。</div>
+    <div class="poem">野旷天低树，江清月近人。</div>
+    <div class="content">——《宿建德江》</div>
+    <div class="tip">↑ 继续滑动 ↑</div>
+</div>
+
+<!-- 第5页 -->
+<div class="page" style="background-image: url('https://s41.ax1x.com/2026/05/07/peb4bhn.png');">
+    <div class="title">归隐鹿门·田园终老</div>
+    <div class="content">约735 - 740</div>
+    <div class="content">晚年归乡隐居，饮酒赏菊，田园诗风淡泊宁静。</div>
+    <div class="poem">绿树村边合，青山郭外斜。</div>
+    <div class="content">——《过故人庄》</div>
+    <div class="tip">↑ 继续滑动 ↑</div>
+</div>
+
+<!-- 第6页 -->
+<div class="page" style="background-image: url('https://s41.ax1x.com/2026/05/07/peb4O10.png');">
+    <div class="title">晚年病逝·诗名长存</div>
+    <div class="content">740年</div>
+    <div class="content">开元二十八年，王昌龄来访，宴饮食鲜，疽发病发，终年五十一岁。</div>
+    <div class="tip">↑ 继续滑动 ↑</div>
+</div>
+
+<!-- 第7页 -->
+<div class="page" style="background-image: url('https://img.cdn1.vip/i/69fb718aa409a_1778086282.webp');">
+    <div class="title">从孟浩然出发……</div>
+    <div class="content">他的“藏”，藏在湖景、比喻与典故里。唐代文人多作干谒诗。</div>
+    <div class="tip">↑ 走进干谒诗的世界 ↑</div>
+</div>
+
+<!-- 第8页 -->
+<div class="page" style="background-image: url('https://s41.ax1x.com/2026/05/07/peb4xnU.png');">
+    <div class="title">拓展一 ·《上李邕》</div>
+    <div class="poem">大鹏一日同风起，扶摇直上九万里。</div>
+    <div class="content">李白以大鹏自比，气势豪迈</div>
+    <div class="tip">↑ 继续滑动 ↑</div>
+</div>
+
+<!-- 第9页 -->
+<div class="page" style="background-image: url('https://s41.ax1x.com/2026/05/07/peb59AJ.png');">
+    <div class="title">拓展二 ·《近试上张水部》</div>
+    <div class="poem">洞房昨夜停红烛，待晓堂前拜舅姑。</div>
+    <div class="content">以新妇喻己，含蓄求问</div>
+    <div class="tip">↑ 继续滑动 ↑</div>
+</div>
+
+<!-- 第10页 -->
+<div class="page" style="background-image: url('https://img.cdn1.vip/i/69fb71fcaa53b_1778086396.webp');">
+    <div class="title">拓展三 · 杜甫 节选</div>
+    <div class="poem">读书破万卷，下笔如有神。</div>
+    <div class="content">沉郁顿挫，才学自陈</div>
+    <div class="tip">↑ 继续滑动 ↑</div>
+</div>
+
+<!-- 第11页 -->
+<div class="page" style="background-image: url('https://img.cdn1.vip/i/69fb716b7dc33_1778086251.webp');">
+    <div class="title">诗在山水间</div>
+    <div class="content">孟浩然一生未仕，诗名流芳。</div>
+    <div class="tip">已读完 · 感谢阅读</div>
+</div>
+
+</div>
+
+<script>
+    let current = 0;
+    const pages = document.querySelectorAll('.page');
+    const total = pages.length;
+    let isAnim = false;
+
+    function updatePage() {
+        pages.forEach((p, i) => {
+            p.style.transform = `translateY(${(i - current) * 100}%)`;
+        });
+    }
+
+    function goNext() {
+        if (current >= total - 1 || isAnim) return;
+        isAnim = true;
+        current++;
+        updatePage();
+        setTimeout(() => isAnim = false, 700);
+    }
+
+    function goPrev() {
+        if (current <= 0 || isAnim) return;
+        isAnim = true;
+        current--;
+        updatePage();
+        setTimeout(() => isAnim = false, 700);
+    }
+
+    let startY = 0;
+    document.addEventListener('touchstart', e => startY = e.touches[0].clientY);
+    document.addEventListener('touchend', e => {
+        const endY = e.changedTouches[0].clientY;
+        if (startY - endY > 50) goNext();
+        if (endY - startY > 50) goPrev();
+    });
+
+    document.addEventListener('wheel', e => {
+        if (e.deltaY > 0) goNext();
+        else goPrev();
+    });
+
+    updatePage();
+</script>
+</body>
+</html>
